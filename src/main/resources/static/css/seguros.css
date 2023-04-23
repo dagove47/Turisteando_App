@@ -1,0 +1,79 @@
+.header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/seguros.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.desc-seguro{
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.desc-seguro button {
+    background: #0EDE00;
+    margin: 50px;
+    border: #0EDE00;
+}
+
+.desc-seguro button:hover {
+    background: #FFA500;
+}
+
+.conten-sub{
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conten-sub form{
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.conten-sub-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.conten-sub-text span {
+    color: #0EDE00;
+}
+
+.conten-sub form .campo{
+    width: 100%;
+    padding: 15px 15px;
+    font-size: 16px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.conten-sub form .btn-sub{
+    padding: 15px 15px;
+    font-size: 16px;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    background: #099100;
+    color: #FFF;
+}
+
+.conten-sub form .btn-sub:hover{
+    background: #0EDE00;
+}
+
+.img-group{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 75px;
+}
+
+.img-group img{
+    width: 300px;
+}
