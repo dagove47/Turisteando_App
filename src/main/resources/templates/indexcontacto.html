@@ -15,6 +15,11 @@
             <!-- CSS -->
             <link rel="stylesheet" href="css/mainStyles.css"/>
             <link rel="stylesheet" href="css/contact.css"/>
+            <!-- emailjs -->
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script type="text/javascript">
+                emailjs.init('sp-w7XqCrCVhxyy_T')
+            </script>
             <!-- JS main -->
             <script type="module" src="js/main.js"></script>
         </head>
@@ -59,6 +64,43 @@
                                 <a class="btn btn-primary "  th:href="@{/editar-contacto/}+${personacontacto.id}"><em class="bi bi-pencil"></em></a>
                                 <a class="btn btn-danger " th:href="@{/eliminar-contacto/}+${personacontacto.id}"  onclick="return confirm('¿Estás seguro de que deseas eliminar este contacto?')"><em class="bi bi-trash3"></em></a>
                             </div>
+                        </div>
+                    </section>
+                    <section class="contact" id="contact">
+                        <div class="container">
+                            <h3>¿Deseas ser parte de nuestro equipo?</h3>
+                            <p>Vamos a conversar...</p>
+                            <form class="formNewMessage row g-3 needs-validation" id="formNewMessage" novalidate>
+                                <div class="col-md-6">
+                                    <label for="newName" class="form-label visually-hidden">Nombre</label>
+                                    <input type="text" class="form-control formStyle" name="newName" id="newName" placeholder="Name" required>
+                                    <div class="valid-feedback">Excelente!</div>
+                                    <div class="invalid-feedback">Valor invalido.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="newEmail" class="form-label visually-hidden">Email</label>
+                                    <input type="email" class="form-control formStyle" name="newEmail" id="newEmail" placeholder="Email" required>
+                                    <div class="valid-feedback">Excelente!</div>
+                                    <div class="invalid-feedback">Valor invalido.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="newSubject" class="form-label visually-hidden">Titulo</label>
+                                    <input type="text" class="form-control formStyle" name="newSubject" id="newSubject" placeholder="Subject"
+                                           required>
+                                    <div class="valid-feedback">Excelente!</div>
+                                    <div class="invalid-feedback">Valor invalido.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="newMessage" class="form-label visually-hidden">Comentario</label>
+                                    <textarea class="form-control formStyle" name="newMessage" id="newMessage" placeholder="Message" rows="3"
+                                              required></textarea>
+                                    <div class="valid-feedback">Excelente!</div>
+                                    <div class="invalid-feedback">Valor invalido.</div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <input class="btn fs-5 mt-3 formStyle" id="submitBtn" type="submit" value="Enviar Mensaje!">
+                                </div>
+                            </form>
                         </div>
                     </section>
                 </main>

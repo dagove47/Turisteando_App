@@ -4,3 +4,50 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/************ FORM ************/
+
+.contact {
+    width: 100%;
+    /*background-image: linear-gradient(rgba(13, 18, 24, 0), rgba(0, 0, 0, 0), rgba(13, 18, 24, 0.7));*/
+}
+
+.contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contact .container h3 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.contact .container p {
+    color: #FFA500;
+    margin: 0 0 3rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contact .container .formNewMessage {
+    max-width: 500px;
+    margin: 0 0 5rem 0;
+}
+
+.contact .container .formNewMessage .formStyle {
+    background: #BEBEBE;
+    color: #000;
+    border-color: #0EDE00;
+    box-shadow: 0 0 0.75em #0EDE00;
+}
+
+.contact .container .formNewMessage .form-control::placeholder {
+    color: #FFF;
+}
+
+.contact .container .formNewMessage .btn:hover {
+    animation: glow 1s ease-in-out infinite alternate;
+}
