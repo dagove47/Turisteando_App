@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     width: 100%;
     font-size: 16px;
+    background: #F7F7F7;
 }
 
 .page-container {
@@ -110,7 +111,7 @@ a {
     padding: 20px;
 }
 .sec-division-right {
-    max-width: 700px;
+    max-width: 500px;
 }
 .sec-division-left  h2{
     font-size: 2.5rem;
@@ -118,6 +119,19 @@ a {
 }
 .sec-division-left  h2 span{
     color: #FFA500;
+}
+
+.sec-division-img {
+    width: 100%;
+    margin: 0 0 60px 0;
+}
+
+.mid-img {
+    height: 300px;
+    max-width: 1800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /************************************ footer ************************************/

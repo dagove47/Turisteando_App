@@ -51,3 +51,10 @@
 .access li a:hover {
     color: #0EDE00;
 }
+
+h2 {
+    color: #FFA500;
+    font-size: 3rem;
+    text-align: center;
+    margin: 50px 0;
+}

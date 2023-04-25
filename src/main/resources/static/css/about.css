@@ -4,3 +4,20 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.mid-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.about-info {
+    max-width: 500px;
+}
+
+.about-info h3{
+    font-size: 2rem;
+    margin: 25px 0;
+}
+
+.about-info p{
+    font-size: 1.2rem;
+}
