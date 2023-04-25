@@ -24,12 +24,14 @@
                             <img class="logo" src="./images/logo.png" alt="Logo Turisteando"/>
                         </a>
                         <ul class="nav-right">
-                            <li><a href="destinos">Destinos</a></li>
-                            <li><a href="/seguro.html">Seguros</a></li>
-                            <li><a href="/tips.html">Tips</a></li>
-                            <li><a href="/about.html">Nosotros</a></li>
-                            <li><a href="/contact.html">Contacto</a></li>
-                            <li><a href="/receipt.html"><em class="bi bi-bag-check"></em></a></li>
+                            <li><a href="/destinos">Destinos</a></li>
+                            <li><a href="/tours">Tours</a></li>
+                            <li><a href="/seguros">Seguros</a></li>
+                            <li><a href="/tips">Tips</a></li>
+                            <li><a href="/listar">Nosotros</a></li>
+                            <li><a href="/contacto">Contacto</a></li>
+                            <li><a href="/reserva"><em class="bi bi-bag-check"></em></a></li>
+                            <li><a href="/servicioalcliente"><em class="bi bi-exclamation-triangle"></em></a></li>
                         </ul>
                     </nav>
                     <h1>Destinos</h1>
@@ -43,37 +45,15 @@
                             Explora el mundo con nuestra selección de destinos turísticos. ¿Buscas aventuras emocionantes, playas relajantes o ciudades llenas de historia? Sea cual sea tu preferencia, tenemos el destino perfecto para ti. ¿A dónde quieres ir? Descubre todo lo que tenemos para ofrecer y comienza a planificar tus próximas vacaciones.
                         </div>
                     </section>
-                    <section class="destinations">
-                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                            <label class="btn btn-outline-primary" for="btnradio1">San José</label>
-
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio2">Alajuela</label>
-
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio3">Cartago</label>
-
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio4">Heredia</label>
-
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio5">Guanacaste</label>
-
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio6">Puntarenas</label>
-
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio7">Limón</label>
-                        </div>
-                        <div class="m-5">
-                            <a th:href="@{/new-destinos}" class="btn btn-primary">Agregar nuevo destino</a>
-                            <a href="url"></a>
-                        </div>
+                    <section class="m-5">
+                        <h2 class="mt-5" style="font-size: 3rem; text-align: center; color: #FFA500">Destinos:</h2>
+                        <a class="m-5" th:href="@{/new-destinos}">
+                            <button type="button" class="btn btn-primary btn-lg mx-auto d-block">Agregar Destino</button>
+                        </a>
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <div class="col"  th:each="destinos:${Destinos}">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="../images/signup.jpg" class="card-img-top" alt="...">
+                                    <img src="https://images.pexels.com/photos/13501101/pexels-photo-13501101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title" th:text="${destinos.nombredestino}"></h5>
                                         <p class="card-text">Ubicación: <span class=""  th:text="${destinos.ubicacion}"></span></p>
